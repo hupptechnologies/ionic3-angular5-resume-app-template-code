@@ -1,0 +1,52 @@
+<!--
+  Generated template for the SubCategoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header class= "top-header">
+  <ion-navbar>
+    <ion-title (click)="home()">
+      	Done
+    </ion-title>
+	<ion-buttons end class="header_icon">
+    	<button ion-button icon-only (click)="changeView(false)" [ngClass]= "!showFile ? 'active':'' ">
+      		<ion-icon class = "custom_icons" name="apps"></ion-icon>
+      	</button>
+    	<button ion-button icon-only (click)="changeView(true)" [ngClass]= "showFile ? 'active':'' ">
+      		<ion-icon class = "custom_icons " name="bookmark"></ion-icon>
+      	</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <div #zoom class="zoom">
+    <div [innerHTML]="htmlContent"></div>
+  </div> -->
+
+  <div *ngIf="!showFile" class="grid_view">
+    <div  *ngFor="let data of allHtmlPages;let index=index">
+      <div  class="grid_view" (click)="openHTML(data,index)" class="main_html box" [innerHTML]="data.data"></div>
+    </div>
+  </div>
+
+  <div *ngIf="showFile" class="grid_view">
+      <div  *ngFor="let data of allHtmlPages;let index=index">
+        <div  *ngIf="data.book" (click)="openHTML(data,index)" class="main_html box" [innerHTML]="data.data"></div>
+      </div>
+  </div>
+
+
+  <!-- <ion-scroll
+    direction="xy"
+    zooming="true"
+    min-zoom="1.0"
+    max-zoom="2.5"
+    overflow-scroll="false"
+    has-bouncing="false"
+    > 
+  <img src="https://www.w3schools.com/howto/img_fjords.jpg"/>
+  </ion-scroll> -->
+</ion-content>

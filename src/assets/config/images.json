@@ -1,0 +1,70 @@
+{
+  "Images": [
+    {
+      "imageURL": "img/01-tunnel.jpg",
+      "target": "_blank",
+      "link": "http://www.example.com",
+      "text": "<p>The text and images are easily indexed by search engines</p>"
+    },
+    {
+      "imageURL": "img/02-couple.jpg",
+      "target": "lightbox",
+      "link": "img/02-couple.jpg",
+      "text": "<p>The text over the images is optional <br> and it is <span style=\"color: #f55; font-weight: bold; font-size: 20px;\">CSS</span><span style=\"color: yellow; font-style: italic;\">formatted</span></p>",
+      "lightboxCaption": "lightbox caption 02"
+    },
+    {
+      "imageURL": "img/03-bridge.jpg",
+      "target": "lightbox",
+      "link": "img/03-bridge.jpg",
+      "text": "<p>You can also have <a href=\"http://www.example.com\" target=\"_blank\" style=\"color: #00a;\">links</a></p>",
+      "lightboxCaption": "lightbox caption 03"
+    },
+    {
+      "imageURL": "img/04-china.jpg",
+      "target": "none",
+      "text": ""
+    },
+    {
+      "imageURL": "img/05-camera.jpg",
+      "target": "lightbox",
+      "link": "img/05-camera.jpg",
+      "text": "<p>This is a new CSS Jquery Coverflow.</p><p>Install it for free on your website</p>",
+      "lightboxCaption": "lightbox caption 05"
+    },
+    {
+      "imageURL": "img/06-free.jpg",
+      "target": "lightbox",
+      "link": "img/06-free.jpg",
+      "text": "<p>Works great on iPhone and iPad</p><p>with tap and swipe movements</p>",
+      "lightboxCaption": "lightbox caption 06"
+    },
+    {
+      "imageURL": "img/07-joy.jpg",
+      "target": "lightbox",
+      "link": "img/07-joy.jpg",
+      "text": "<p>The Coverflow is responsive</p><p>Narrow the width of your browser to see</p>",
+      "lightboxCaption": "lightbox caption 07"
+    },
+    {
+      "imageURL": "img/08-feet.jpg",
+      "target": "lightbox",
+      "link": "img/08-feet.jpg",
+      "text": "<p>Clicking on this image</p><p>Will open a lightbox with a bigger image</p>",
+      "lightboxCaption": "lightbox caption 08"
+    },
+    {
+      "imageURL": "img/09-girl.jpg",
+      "target": "_blank",
+      "link": "http://www.example.com",
+      "text": "<p>Clicking on this image</p><p>Will take you to an external link</p>"
+    },
+    {
+      "imageURL": "img/10-beach.jpg",
+      "target": "lightbox",
+      "link": "img/10-beach.jpg",
+      "text": "<p>But it could also take you to a link inside your web page</p>",
+      "lightboxCaption": "lightbox caption 10"
+    }
+  ]
+}

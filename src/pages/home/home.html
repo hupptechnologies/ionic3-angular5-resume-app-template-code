@@ -1,0 +1,79 @@
+<ion-header class= "top-header">
+  <ion-navbar>
+    <ion-title (click)="done()">
+      	Done
+    </ion-title>
+    <ion-buttons end class="header_icon">
+    	<button ion-button icon-only (click)="done()">
+      		<ion-icon class = "custom_icons" name="apps"></ion-icon>
+      	</button>
+      	<button ion-button icon-only (click)="share()">
+      		<ion-icon class = "custom_icons" name="ios-share-alt"></ion-icon>
+      	</button>
+      	<button ion-button icon-only (click)="print()">
+      		<ion-icon class = "custom_icons" name="print"></ion-icon>
+      	</button>
+      	<button ion-button icon-only [hidden]="flag" (click)="bookmark()">
+      		<ion-icon class = "custom_icons" name="bookmark"></ion-icon>
+      	</button>
+      	<button ion-button icon-only  class="bookMark" [hidden]="!flag" (click)="unbookmark()">
+      		<ion-icon class = "custom_icons" name="bookmark"></ion-icon>
+      	</button>
+    </ion-buttons>
+    <!-- <div class="header_icon">
+    	<ion-row>
+		    <ion-col col-lg-2 col-xl-2>
+		      	<ion-icon class = "custom_icons" name="apps"></ion-icon>
+		    </ion-col>
+		    <ion-col col-lg-2 col-xl-2>
+		      	<ion-icon class = "custom_icons" name="log-out"></ion-icon>
+		    </ion-col>
+		    <ion-col col-lg-2 col-xl-2>
+		      	<ion-icon class = "custom_icons" name="print"></ion-icon>
+		    </ion-col>
+		    <ion-col col-lg-2 col-xl-2>
+		      	<ion-icon class = "custom_icons" name="mail"></ion-icon>
+		    </ion-col>
+		    <ion-col col-lg-2 col-xl-2>
+		      	<ion-icon class = "custom_icons" name="bookmark"></ion-icon>
+		    </ion-col>
+  		</ion-row>
+	</div> -->
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  	<div class="cover_letter" [innerHTML]="data">
+  		<!-- <p class = "cover_letter_title" >Cover letter : international student</p>
+  		<p>12 April 2015</p>
+  		<div class="cover_letter_content">
+  			<p>Recuruting Manager <br />Royal Pearl <br />The Granary <br />47 oltmer walk<br /> London <br />WR1 9HH</p>
+  			<p>Job Reference : Graduate account manager vacancy</p>
+  			<p>Dear Recuruting Manager,</p>
+  			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis laoreet maximus. Duis non lacinia arcu. Cras commodo eros a gravida laoreet. Phasellus quis metus mi. 
+			</p>
+			<p>
+				In ac feugiat purus. Donec dictum mi a mattis pulvinar. Ut euismod ut mauris quis tempus. Donec id ornare risus. Mauris vulputate sagittis nisi nec venenatis.
+			</p>
+			<p>
+				Praesent gravida, dui bibendum ullamcorper viverra, mauris leo molestie sapien, non tempus nibh magna id libero. Integer sed aliquam urna. Curabitur egestas est sit amet turpis imperdiet, quis tincidunt dui aliquet. 
+			</p>
+			<p>
+				I look forward to hearing from you, if needed this is a possibility.
+			</p>
+			<p>
+				Your's faithfully, 
+			</p>
+			<p>
+				(Signed)
+			</p>
+  		</div> -->
+  	</div>
+</ion-content>
+
+<ion-footer class= "bottom-footer">
+	<ion-toolbar>
+		<ion-title></ion-title>
+	</ion-toolbar>
+</ion-footer>

@@ -1,0 +1,16 @@
+<ion-content>
+<div class="slider_heding">
+	<h1>{{activeCategory.category}}</h1>
+</div>
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" *ngFor="let item of images">
+        	<div class="slider_img" (click)='category(item)' [style.backgroundImage]="'url(' + item.image + ')'" >
+        	</div>
+        </div>
+        
+    </div>
+</div>
+</ion-content>
