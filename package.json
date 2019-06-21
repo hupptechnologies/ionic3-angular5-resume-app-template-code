@@ -42,7 +42,7 @@
     "cordova-plugin-file-opener2": "^2.0.19",
     "cordova-plugin-file-transfer": "^1.7.1",
     "cordova-plugin-inappbrowser": "^2.0.2",
-    "cordova-plugin-ionic-webview": "^1.1.16",
+    "cordova-plugin-ionic-webview": "^2.2.0",
     "cordova-plugin-splashscreen": "^4.1.0",
     "cordova-plugin-themeablebrowser": "^0.2.17",
     "cordova-plugin-whitelist": "^1.3.3",
